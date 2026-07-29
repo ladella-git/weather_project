@@ -41,7 +41,7 @@
     </section>
 
     <!-- 홈 화면: 주요 도시 리스트 + 세계 리스트 -->
-    <div id="screen-home" class="screen">
+    <div id="screen-home" class="screen" hidden>
         <div class="page-content">
             <div class="page-content-inner">
                 <div class="home-top">
@@ -105,12 +105,30 @@
                  </div>
 
 
-                <div class="footer-home"></div>
+                <div class="footer-home">
+                    <p>Data by <a href="https://open-meteo.com" target="_blank">Open-Meteo</a></p>
+                    <p>효산고등학교 IT융합정보과 3114 정성현</p>
+                </div>
             </div>
         </div>
     </div>
 
-    <div id="screen-detail" class="screen" hidden></div>
+    <div id="screen-detail" class="screen screen-detail">
+        <header class="detail-header">
+            <button type="button" id="backBtn" class="back-btn">← 목록으로</button>
+        </header>
+
+        <div class="app">
+            <main>
+
+                <p id="statusMsg" class="status-msg" role="status" hidden>
+                    날씨 정보를 불러오는 중...
+                </p>
+
+
+            </main>
+        </div>
+    </div>
 
 </body>
 
